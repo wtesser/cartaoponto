@@ -1,21 +1,23 @@
+import 'package:cartaoponto/pages/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:mapas_md/pages/maps_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const PontoEletronico());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  // This widget is the root of your application.
+class PontoEletronico extends StatelessWidget {
+  const PontoEletronico({super.key});
+
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Usando Mapas - MD',
-      theme: ThemeData(
+      title: 'Cartão Ponto',
 
-        primarySwatch: Colors.blue,
+      theme: ThemeData(
+        primarySwatch: Colors.lightBlue,
       ),
       home: HomePage(),
     );
